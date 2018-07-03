@@ -5,7 +5,7 @@ const client = require('../controller/client')
 module.exports = {
     async server (app) {
         // 后台接口列表
-        router.get('/server', server.test)
+        router.post('/server', server.test)
     
         app.use(router.routes())
     },
